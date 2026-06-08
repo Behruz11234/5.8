@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 async function connectDB() {
   try {
     await mongoose.connect(process.env.MONGO_URI);
-    console.log("Db conect");
+    console.log("Db ulandi");
   } catch (error) {
     console.error( error.message);
     process.exit(1);
